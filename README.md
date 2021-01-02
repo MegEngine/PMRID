@@ -6,6 +6,7 @@ Code and dataset for ECCV20 paper [Practical Deep Raw Image Denoising on Mobile
 
 ### Downloads
 - [OneDrive](https://megvii-my.sharepoint.cn/:f:/g/personal/wangyuzhi_megvii_com/Et4v2Z7CkRxHnbcFUq6RXZMBfXUrlm_Se5OVDvcdujVsMA?e=vcfJWs)
+- [Kaggle](https://www.kaggle.com/dataset/1bdc5cd707cfbb3ee842eb3cbfe93495dbba88017d29f295f8edbcb8f8790556)
 
 ### Usage
 
@@ -50,6 +51,16 @@ All metadata for images are listed in `benchmark.json`:
        ]
    }
 }
+```
+
+## Pre-trained Models and Benchmark Script
+
+Both [PyTorch](https://pytorch.org/) and [MegEngine](https://megengine.org.cn/) pre-trained models are provided in the `models` directory. 
+The benchmark script is written for models trained with MegEngine. `Python >= 3.6` is required to run the benchmark script.
+
+```
+pip install -r requirements.txt
+python3 run_benchmark.py --benchmark /path/to/PMRID/benchmark.json models/mge_pretrained.ckp
 ```
 
 
