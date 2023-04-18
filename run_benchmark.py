@@ -12,7 +12,7 @@ from tqdm import tqdm
 
 from models.net_mge import Network
 from utils import RawUtils
-from benchmark import BenchmarkLoader, RawMeta
+from dataset.benchmark import BenchmarkLoader, RawMeta
 
 
 class KSigma:
